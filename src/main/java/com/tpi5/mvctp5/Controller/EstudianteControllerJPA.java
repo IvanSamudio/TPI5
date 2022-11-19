@@ -15,34 +15,37 @@ import java.util.Locale;
 
 @RestController
 @RequestMapping("Estudiantes")
-@Api(value = "EstudianteControllerJPA", description = "REST API estudiante description")
+@Api(value = "EstudianteControllerJPA", description = "REST API estudiante")
 public class EstudianteControllerJPA {
 
     @Autowired
     private EstudianteServiceImp estudianteService;
 
-
+    @ApiOperation(value = "Get list of estudiantes", response = Iterable.class)
     @GetMapping("/")
     public Iterable<Estudiante> getEstudiantes() {
         return estudianteService.getAll();
     }
 
+    @ApiOperation(value = "Get list of estudiantes order by edad", response = Iterable.class)
     @GetMapping("/orderByEdad/")
     public Iterable<Estudiante> getEstudiantesByEdad() {
         return estudianteService.getAllOrderByEdad();
     }
 
-
+    @ApiOperation(value = "Get estudiante by numero de libreta universitaria", response = Iterable.class)
     @GetMapping("/getEstudiante/{nroLibreta}")
     public Estudiante getEstudiante(@PathVariable(value = "nroLibreta") Long nroLibreta) {
         return estudianteService.getEstudianteByNroLibreta(nroLibreta);
     }
 
+    @ApiOperation(value = "Get estudiante by genero", response = Iterable.class)
     @GetMapping("/{genero}")
     public Iterable<Estudiante> getEstudiante(@PathVariable(value = "genero") String genero) {
         return estudianteService.getEstudiantesByGenero(genero.toLowerCase(Locale.ROOT));
     }
 
+    @ApiOperation(value = "Post estudiante", response = Iterable.class)
     @PostMapping()
     public Estudiante newEstudiante(@RequestBody Estudiante e) {
         return estudianteService.insertEstudiante(e);
