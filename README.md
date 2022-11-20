@@ -10,11 +10,11 @@ Estos curl´s deben ser importados en postman para su testeo.
 
 
 
-Get estudiantes(https://tpi5-mvctp5.herokuapp.com/Estudiantes/)
+Get estudiantes
 - curl --location --request GET 'https://tpi5-mvctp5.herokuapp.com/Estudiantes/'
 
 
-Post estudiante(https://tpi5-mvctp5.herokuapp.com/Estudiantes/)
+Post estudiante
 - curl --location --request POST 'https://tpi5-mvctp5.herokuapp.com/Estudiantes/' \
   --header 'Content-Type: application/json' \
   --data-raw '{
@@ -28,7 +28,7 @@ Post estudiante(https://tpi5-mvctp5.herokuapp.com/Estudiantes/)
       }'
 
 
-Post carrera(https://tpi5-mvctp5.herokuapp.com/Carreras/)
+Post carrera
 - curl --location --request POST 'https://tpi5-mvctp5.herokuapp.com/Carreras/' \
   --header 'Content-Type: application/json' \
   --data-raw '{
@@ -37,7 +37,7 @@ Post carrera(https://tpi5-mvctp5.herokuapp.com/Carreras/)
   }'
   
   
-Matricular estudiante en una carrera(https://tpi5-mvctp5.herokuapp.com/DatosAcademicos/matricularEstudiante/2)
+Matricular estudiante en una carrera
 - curl --location --request POST 'https://tpi5-mvctp5.herokuapp.com/DatosAcademicos/matricularEstudiante/2' \
   --header 'Content-Type: application/json' \
   --data-raw '{
