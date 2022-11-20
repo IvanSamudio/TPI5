@@ -6,6 +6,9 @@ https://tpi5-mvctp5.herokuapp.com/swagger-ui/index.html#/
 
 ### Lista de curl´s para testeo de la API REST en Heroku
 
+Estos curl´s deben ser importados en postman para su testeo.
+
+
 Get estudiantes(https://tpi5-mvctp5.herokuapp.com/Estudiantes/)
 - curl --location --request GET 'https://tpi5-mvctp5.herokuapp.com/Estudiantes/'
 
