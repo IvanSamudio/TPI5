@@ -1,6 +1,6 @@
 # TPI5
 
-###Lista de curl´s para testeo de la API REST en Heroku
+##Lista de curl´s para testeo de la API REST en Heroku
 
 Get estudiantes(https://tpi5-mvctp5.herokuapp.com/Estudiantes/)
 - curl --location --request GET 'https://tpi5-mvctp5.herokuapp.com/Estudiantes/'
