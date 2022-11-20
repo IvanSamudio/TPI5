@@ -9,8 +9,10 @@ https://tpi5-mvctp5.herokuapp.com/swagger-ui/index.html#/
 Estos curl´s deben ser importados en postman para su testeo.
 
 
+
 Get estudiantes(https://tpi5-mvctp5.herokuapp.com/Estudiantes/)
 - curl --location --request GET 'https://tpi5-mvctp5.herokuapp.com/Estudiantes/'
+
 
 Post estudiante(https://tpi5-mvctp5.herokuapp.com/Estudiantes/)
 - curl --location --request POST 'https://tpi5-mvctp5.herokuapp.com/Estudiantes/' \
@@ -24,11 +26,21 @@ Post estudiante(https://tpi5-mvctp5.herokuapp.com/Estudiantes/)
           "dni": "53255627",
           "residencia": "Tandil"
       }'
-      
+
+
 Post carrera(https://tpi5-mvctp5.herokuapp.com/Carreras/)
 - curl --location --request POST 'https://tpi5-mvctp5.herokuapp.com/Carreras/' \
   --header 'Content-Type: application/json' \
   --data-raw '{
       "idCarrera":3,
       "nombre":"Profesorado de Informática"
+  }'
+  
+  
+Matricular estudiante en una carrera(https://tpi5-mvctp5.herokuapp.com/DatosAcademicos/matricularEstudiante/2)
+- curl --location --request POST 'https://tpi5-mvctp5.herokuapp.com/DatosAcademicos/matricularEstudiante/2' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{
+      "idCarrera":1,
+      "nombre":"Tudai"
   }'
