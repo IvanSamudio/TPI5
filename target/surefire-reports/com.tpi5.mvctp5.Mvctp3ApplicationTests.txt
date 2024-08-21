@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.tpi5.mvctp5.Mvctp3ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.641 s - in com.tpi5.mvctp5.Mvctp3ApplicationTests
